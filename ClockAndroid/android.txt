@@ -1,0 +1,5 @@
+title=Clock
+
+author=Kivy team1
+
+orientation=portrait

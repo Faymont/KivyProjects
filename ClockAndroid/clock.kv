@@ -1,0 +1,45 @@
+ClockLayout:
+    orientation: 'vertical'
+
+    Label:
+        id:time
+        text: '[b]00[/b]:00:00'
+
+    BoxLayout:
+        size_hint:(1,.5)
+        orientation: 'horizontal'
+        padding: 20
+        spacing: 20
+
+
+        RobotoButton:
+            id: start_stop
+            text: 'Start'
+            on_press: app.start_stop()
+
+        RobotoButton:
+            id: reset
+            text: 'Reset'
+            on_press: app.reset()
+
+    Label:
+        id: stopwatch
+        text: '00:00.[size=200]00[/size]'
+
+    BoxLayout:
+        height: 90
+        orientation: 'horizontal'
+        padding: 20
+        spacing: 20
+        size_hint:(.5,None)
+
+<Label>:
+    markup: True
+    font_name: 'Roboto'
+    font_size: 250
+
+<RobotoButton@Button>:
+    border: [2] * 4
+    font_name: 'Roboto'
+    font_size: 150
+    bold: True
